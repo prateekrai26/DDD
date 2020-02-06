@@ -1,0 +1,21 @@
+<div class="row">
+  <h1 style="text-align: center">Sign Up</h1>
+  <div class="rwd-form">
+      <p>{{id}}</p>
+    <form action="/users/tasks/update/{{id}}" method="post">
+       
+       <div class="form-group">
+        <label for="Description">Description</label>
+        <input class="form-control" type="text" name="description" autocomplete="off" required />
+      </div>
+
+       <div class="form-group">
+        <label for="completed">Completed</label>
+        <input class="form-control" type="text" name="completed" autocomplete="off" required />
+      </div>
+       <div class="form-group">
+        <button class="btn btn-md btn-primary btn-block">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

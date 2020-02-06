@@ -1,0 +1,19 @@
+<html>
+      <body>
+          <h1>Tasks</h1>
+          {{#each task}}
+
+
+            <h3>Description : {{description}}</h3>
+            <p>Completed : {{completed}}</p>
+            <a href="/users/tasks/update/{{_id}}">Edit</a></a>
+            <form action="/users/tasks/delete/{{_id}}" method="DELETE">
+              <button>Delete</button>
+            </form>
+         {{/each }}
+       <a href="/users/login">Login</a>
+      <a href="/users/me">Home</a>
+      </body> 
+ 
+
+</html>
